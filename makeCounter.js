@@ -1,6 +1,7 @@
- module.exports = function makeCounter(someObj) {
+module.exports = function makeCounter(someObj, maxnum) {
+     var maxnum = maxnum || 10
      var values = [];
-     for (var i = 0; i < 10; i++)
+     for (var i = 0; i < maxnum; i++)
          values[i] = i + 1;
      var iter = 0;
      
